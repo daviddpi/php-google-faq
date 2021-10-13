@@ -42,18 +42,16 @@ $domandeFrequenti = [
 ];
 
 
-// foreach ($domandeFrequenti as $domande){
-//     foreach($domande as $risposte => $valore){
-//         if($risposte == "titolo"){
-//             echo "<h2> $valore </h2>";
-//         }
-//         echo "<p> $valore </h2>";
-//     }
-// }
-
-foreach($domandeFrequenti as $domande ){
-    echo $domande["titolo"] . $domande["testo"];
+foreach ($domandeFrequenti as $domande){
+    foreach($domande as $risposte => $valore){
+        if($risposte == "titolo"){
+            echo "<h2> $valore </h2>";
+        }
+        echo "<p> $valore </h2>";
+    }
 }
+
+
 
 
 ?>
