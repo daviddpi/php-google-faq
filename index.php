@@ -3,7 +3,7 @@
 $domandeFrequenti = [
 
     [
-        "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+        "titolo" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
 
         "testo" => "La recente decisione della Corte di giustizia dell'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.
 
@@ -42,13 +42,17 @@ $domandeFrequenti = [
 ];
 
 
-foreach ($domandeFrequenti as $domande){
-    foreach($domande as $risposte => $valore){
-        if($risposte == "titolo"){
-            echo "<h2> $valore </h2>";
-        }
-        echo "<p> $valore </h2>";
-    }
+// foreach ($domandeFrequenti as $domande){
+//     foreach($domande as $risposte => $valore){
+//         if($risposte == "titolo"){
+//             echo "<h2> $valore </h2>";
+//         }
+//         echo "<p> $valore </h2>";
+//     }
+// }
+
+foreach($domandeFrequenti as $domande ){
+    echo $domande["titolo"] . $domande["testo"];
 }
 
 
